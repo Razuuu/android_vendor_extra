@@ -13,6 +13,10 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+## Recovery ADB keys
+PRODUCT_COPY_FILES += \
+    vendor/extra/razuuu/adb_keys:$(TARGET_COPY_OUT_RECOVERY)/root/adb_keys
+
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
     vendor/extra/razuuu/overlay
 DEVICE_PACKAGE_OVERLAYS += \
